@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luminate Footer</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  .footer {
+    width: 640px;
+    background-color: #101014;
+    padding: 34px 30px 27px;
+    font-family: 'Aktiv Grotesk', 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  }
+
+  /* ── Top row ── */
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 88px;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .social-icons a {
+    display: inline-flex;
+    color: #88898c;
+    text-decoration: none;
+  }
+
+  .social-icons svg {
+    width: 19px;
+    height: 19px;
+    fill: #88898c;
+  }
+
+  .footer-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+  }
+
+  .manage-btn {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #88898c;
+    background: transparent;
+    color: #88898c;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    line-height: 1;
+  }
+
+  .unsubscribe {
+    font-size: 10px;
+    font-weight: 600;
+    color: #88898c;
+    text-decoration: underline;
+  }
+
+  /* ── Bottom row ── */
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    font-family: 'Impact', 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+    font-size: 36px;
+    font-weight: 900;
+    color: white;
+    letter-spacing: 2px;
+    line-height: 1;
+    text-transform: uppercase;
+    /* Condensed look */
+    font-stretch: condensed;
+    -webkit-text-stroke: 1px white;
+  }
+
+  .footer-legal {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: left;
+  }
+
+  .footer-legal p,
+  .footer-legal a {
+    font-size: 10px;
+    font-weight: 600;
+    color: #88898c;
+    text-decoration: none;
+    line-height: 1;
+  }
+
+  .footer-legal a:hover {
+    text-decoration: underline;
+  }
+
+  .legal-links {
+    display: flex;
+    gap: 6px;
+  }
+
+  .legal-links .separator {
+    color: #88898c;
+  }
+</style>
+</head>
+<body>
+
+<footer class="footer">
+  <!-- Top row -->
+  <div class="footer-top">
+    <div class="social-icons">
+      <!-- LinkedIn -->
+      <a href="#" aria-label="LinkedIn">
+        <svg viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4.25 2.13C4.25 3.06 3.5 3.81 2.38 3.81C1.31 3.81 0.56 3.06 0.56 2.13C0.56 1.18 1.33 0.41 2.4 0.41C3.5 0.41 4.23 1.18 4.25 2.13ZM0.63 18.59V5.27H4.18V18.59H0.63ZM6.69 9.67C6.69 8.17 6.63 6.9 6.57 5.83H9.65L9.81 7.46H9.88C10.35 6.71 11.54 5.55 13.54 5.55C16.01 5.55 17.87 7.21 17.87 10.68V18.59H14.32V11.15C14.32 9.52 13.74 8.42 12.37 8.42C11.32 8.42 10.72 9.17 10.45 9.89C10.35 10.14 10.3 10.49 10.3 10.84V18.59H6.69V9.67Z"/>
+        </svg>
+      </a>
+      <!-- Instagram -->
+      <a href="#" aria-label="Instagram">
+        <svg viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.5 1.71c2.54 0 2.84.01 3.84.06 .93.04 1.43.2 1.76.33 .44.17 .76.38 1.09.71 .33.33 .54.65 .71 1.09 .13.34 .29.84 .33 1.76 .04 1 .06 1.3 .06 3.84s-.01 2.84-.06 3.84c-.04.93-.2 1.43-.33 1.76-.17.44-.38.76-.71 1.09-.33.33-.65.54-1.09.71-.34.13-.84.29-1.76.33-1 .04-1.3.06-3.84.06s-2.84-.01-3.84-.06c-.93-.04-1.43-.2-1.76-.33-.44-.17-.76-.38-1.09-.71-.33-.33-.54-.65-.71-1.09-.13-.34-.29-.84-.33-1.76-.04-1-.06-1.3-.06-3.84s.01-2.84.06-3.84c.04-.93.2-1.43.33-1.76.17-.44.38-.76.71-1.09.33-.33.65-.54 1.09-.71.34-.13.84-.29 1.76-.33 1-.04 1.3-.06 3.84-.06M9.5 0c-2.58 0-2.9.01-3.91.06s-1.7.2-2.31.43c-.63.24-1.16.57-1.69 1.1S.73 2.56.49 3.19c-.23.6-.38 1.29-.43 2.31C.01 6.51 0 6.83 0 9.41s.01 2.9.06 3.91.2 1.7.43 2.31c.24.63.57 1.16 1.1 1.69s1.06.86 1.69 1.1c.6.23 1.29.38 2.31.43 1.01.05 1.33.06 3.91.06s2.9-.01 3.91-.06 1.7-.2 2.31-.43c.63-.24 1.16-.57 1.69-1.1s.86-1.06 1.1-1.69c.23-.6.38-1.29.43-2.31.05-1.01.06-1.33.06-3.91s-.01-2.9-.06-3.91-.2-1.7-.43-2.31c-.24-.63-.57-1.16-1.1-1.69S16.44.73 15.81.49c-.6-.23-1.29-.38-2.31-.43C12.49.01 12.17 0 9.5 0z"/>
+          <circle cx="9.5" cy="9.5" r="3.08"/>
+          <circle cx="14.55" cy="4.45" r="1"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="footer-actions">
+      <a href="#" class="manage-btn">Manage Your Email Preferences</a>
+      <a href="#" class="unsubscribe">Unsubscribe from all Luminate email</a>
+    </div>
+  </div>
+
+  <!-- Bottom row -->
+  <div class="footer-bottom">
+    <div class="logo">LUMINATE</div>
+
+    <div class="footer-legal">
+      <div class="legal-links">
+        <a href="#">Privacy Policy</a>
+        <span class="separator">&middot;</span>
+        <a href="#">Terms of Use</a>
+      </div>
+      <p>&copy; 2026 Luminate Data, LLC &middot; 11355 W Olympic Blvd, Los Angeles, CA 90064</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
